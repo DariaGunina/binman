@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  background-color: #F2F2F2;
 }
 .workspace__aside {
   width: 80px;
@@ -127,10 +128,116 @@ body {
   left: 15px;
 }
 
-.list__container {
+.table {
+  margin: 20px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 68px 68px 68px 68px 68px;
+  row-gap: 2px;
+}
+.table__title {
+  padding: 14px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #475364;
+  background-color: #FFFFFF;
+}
+.table__name {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+}
+.table__photo {
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.table__fullname {
+  font-size: 14px;
+  font-weight: 700;
+  color: #475364;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 3px;
+}
+.table__vacancy {
+  font-size: 10px;
+  font-weight: 400;
+  color: #8EA4B5;
+  margin: 0;
+}
+.table__phone {
+  display: flex;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+}
+.table__phone svg {
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+}
+.table__number {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475364;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 3px;
+}
+.table__spare {
+  font-size: 10px;
+  font-weight: 400;
+  color: #8EA4B5;
+  margin: 0;
+}
+.table__mail {
+  display: flex;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+}
+.table__mail svg {
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+}
+.table__address {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475364;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 3px;
+}
+.table__appraisal {
+  padding: 14px 20px;
+  background-color: #FFFFFF;
+}
+.table__function {
+  padding: 16px 20px 16px 20px;
+  background-color: #FFFFFF;
+}
+.table__function svg {
+  width: 36px;
+  height: 36px;
+  margin-right: 2px;
+}
+
+.star {
+  margin-right: 3px;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+.star_green {
+  fill: #ABD02D;
+  stroke: #ABD02D;
+}
+.star_empty {
+  fill: #ffffff;
+  stroke: #ABD02D;
 }
 
 /*# sourceMappingURL=/main.22a94128.css.map */
