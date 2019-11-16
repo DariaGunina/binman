@@ -1,8 +1,8 @@
 .table
-    margin: 20px 30px 50px 30px
+    margin: 20px 30px 0 30px
     display: grid
     grid-template-columns: auto auto auto auto auto
-    grid-template-rows: 68px 68px 68px 68px 68px
+    grid-template-rows: 40px 68px 68px 68px 68px 68px 
     row-gap: 2px
     
     &__title
@@ -32,15 +32,13 @@
         font-weight: 400
         color: $textLight
         margin: 0
+    
     &__phone
         display: flex
         justify-content: flex-start
         padding: 14px 20px
-        background-color: $colorFillItem
-        svg
-            margin-right: 10px
-            width: 36px
-            height: 36px
+        background-color: $colorFillItem  
+
     &__number
         font-size: 12px
         font-weight: 700
@@ -53,15 +51,16 @@
         font-weight: 400
         color: $textLight
         margin: 0
+        letter-spacing: 0.5px
+    
     &__mail
         display: flex
         justify-content: flex-start
         padding: 14px 20px
         background-color: $colorFillItem
         svg
-            margin-right: 10px
-            width: 36px
-            height: 36px
+            width: 14px
+            height: 14px
     &__address
         font-size: 12px
         font-weight: 700
@@ -75,13 +74,41 @@
         background-color: $colorFillItem
     
     &__function
+        display: flex
+        justify-content: flex-start
         padding: 16px 20px 16px 20px
         background-color: $colorFillItem
+
+    &__number-none
+        font-size: 12px
+        font-weight: 700
+        color: #A3A9B1
+        margin: 0
+        margin-top: 11px
+       
+
+    &__number-one
+        font-size: 12px
+        font-weight: 700
+        margin: 0
+        margin-top: 11px
+        color: $textDark
+
+    &__address-one
+        font-size: 12px
+        font-weight: 700
+        color: $textDark
+        margin: 0
+        margin-top: 11px
+    &__address-none
+        font-size: 12px
+        font-weight: 700
+        color: #A3A9B1
+        margin: 0
+        margin-top: 11px
+   
         
-        svg
-            width: 36px
-            height: 36px
-            margin-right: 2px
+    
             
                 
             

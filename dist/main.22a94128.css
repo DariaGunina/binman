@@ -129,10 +129,10 @@ body {
 }
 
 .table {
-  margin: 20px 30px 50px 30px;
+  margin: 20px 30px 0 30px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: 68px 68px 68px 68px 68px;
+  grid-template-rows: 40px 68px 68px 68px 68px 68px;
   row-gap: 2px;
 }
 .table__title {
@@ -173,11 +173,6 @@ body {
   padding: 14px 20px;
   background-color: #FFFFFF;
 }
-.table__phone svg {
-  margin-right: 10px;
-  width: 36px;
-  height: 36px;
-}
 .table__number {
   font-size: 12px;
   font-weight: 700;
@@ -191,6 +186,7 @@ body {
   font-weight: 400;
   color: #8EA4B5;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 .table__mail {
   display: flex;
@@ -199,9 +195,8 @@ body {
   background-color: #FFFFFF;
 }
 .table__mail svg {
-  margin-right: 10px;
-  width: 36px;
-  height: 36px;
+  width: 14px;
+  height: 14px;
 }
 .table__address {
   font-size: 12px;
@@ -216,20 +211,48 @@ body {
   background-color: #FFFFFF;
 }
 .table__function {
+  display: flex;
+  justify-content: flex-start;
   padding: 16px 20px 16px 20px;
   background-color: #FFFFFF;
 }
-.table__function svg {
-  width: 36px;
-  height: 36px;
-  margin-right: 2px;
+.table__number-none {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A3A9B1;
+  margin: 0;
+  margin-top: 11px;
+}
+.table__number-one {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 11px;
+  color: #475364;
+}
+.table__address-one {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475364;
+  margin: 0;
+  margin-top: 11px;
+}
+.table__address-none {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A3A9B1;
+  margin: 0;
+  margin-top: 11px;
 }
 
 .star {
-  margin-right: 3px;
   margin: 0;
   width: 15px;
   height: 15px;
+  padding: 0;
+}
+.star:hover {
+  filter: drop-shadow(1px 1px 1px grey);
 }
 .star_green {
   fill: #ABD02D;
@@ -238,6 +261,69 @@ body {
 .star_empty {
   fill: #ffffff;
   stroke: #ABD02D;
+}
+.star_red {
+  fill: #FF5D00;
+  stroke: #FF5D00;
+}
+.star_empty2 {
+  fill: #ffffff;
+  stroke: #FF5D00;
+}
+.star_chlorine {
+  fill: #DAE700;
+  stroke: #DAE700;
+}
+.star_empty3 {
+  fill: #ffffff;
+  stroke: #DAE700;
+}
+.star_orange {
+  fill: #FFA800;
+  stroke: #FFA800;
+}
+.star_empty4 {
+  fill: #ffffff;
+  stroke: #FFA800;
+}
+.star_jade {
+  fill: #67C600;
+  stroke: #67C600;
+}
+
+.button {
+  padding: 20px;
+  background-color: #E8EFF1;
+  border-radius: 2px;
+  margin-right: 5px;
+  position: relative;
+}
+.button__opacity {
+  opacity: 0.3;
+}
+.button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  width: 1305px;
+  margin: 2px 30px;
+}
+.footer__data {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #475364;
 }
 
 /*# sourceMappingURL=/main.22a94128.css.map */
